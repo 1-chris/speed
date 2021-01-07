@@ -11,7 +11,7 @@ var pingProgress = 0 //progress of ping+jitter test 0-1
 
 // test settings. can be overridden by sending specific values with the start command
 var settings = {
-  test_order: "IP_D_U", //order in which tests will be performed as a string. D=Download, U=Upload, P=Ping+Jitter, I=IP, _=1 second delay
+  test_order: "P_D_U", //order in which tests will be performed as a string. D=Download, U=Upload, P=Ping+Jitter, I=IP, _=1 second delay
   time_ul: 15, // duration of upload test in seconds
   time_dl: 15, // duration of download test in seconds
   time_ulGraceTime: 3, //time to wait in seconds before actually measuring ul speed (wait for buffers to fill)
